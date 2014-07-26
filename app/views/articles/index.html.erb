@@ -1,5 +1,7 @@
 <h1>All Articles</h1>
-
+<% if flash[:success] %>
+	<%= flash[:success] %>
+<% end %>
 <ul id='articles'>
 		<% @articles.each do |article| %>
 			<li>
