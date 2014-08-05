@@ -1,6 +1,6 @@
 Blogger::Application.routes.draw do
 
-	root to: 'drinks#index'
+	root 'drinks#index'
 	resources :articles do
 		resources :comments
 	end
